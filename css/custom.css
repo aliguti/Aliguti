@@ -9,7 +9,7 @@ body {
   background-size: cover;
 }
 
-.coverimg h1,h2{
+.coverimg h1,h2,h3,a{
   padding: 40px;
   color: #fff; 
 }
