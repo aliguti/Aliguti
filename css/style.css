@@ -1,0 +1,178 @@
+body{
+	font-family: 'Lato', sans-serif;
+}
+
+.title{
+	margin-top: 50px;
+}
+
+.title h1 a{
+	color: #000;
+	text-decoration: none;
+}
+
+.title h5 a{
+	color: #000;
+	text-decoration: none;
+}
+
+/*Esto es para modificar el tamaño del texto del post*/
+.biggertext {
+	font-size: 110%;
+}
+
+/* Customize the nav-justified links to be fill the entire space of the .navbar */
+
+.nav-justified {
+  background-color: #fff;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.nav-justified > li > a {
+  padding-top: 15px;
+  padding-bottom: 10px; /*espacio entre línea que indica el elemento de menu activo y los elementos de la barra de menú*/
+  margin-bottom: 10px; /*espacio entre línea que indica el elemento de menu activo y las imagenes*/
+  /*color texto menú */
+  color: #333;
+  text-align: center;
+}
+.nav-justified > .active > a,
+.nav-justified > .active > a:hover,
+.nav-justified > .active > a:focus {
+  border-bottom: 1px solid #000;
+
+}
+.nav-justified > li:first-child > a {
+
+}
+.nav-justified > li:last-child > a {
+
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    /*color menu al hacer hover*/
+    color: #ff776f;
+    background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .nav-justified {
+    max-height: 52px;
+  }
+  .nav-justified > li > a {
+
+  }
+  .nav-justified > li:first-child > a {
+
+  }
+  .nav-justified > li:last-child > a {
+
+  }
+}
+
+.imgDescription {
+  position: absolute;
+  /*tamaño de letra del hover de las imagenes*/
+  font-size: 1.20em;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  line-height: 100%;
+  /*color texto que sale automaticamente y que luego se oculta para luego añadir el texto que queremos*/
+  color: #000;
+
+
+  visibility: hidden;
+
+
+  /*remove comment if you want a gradual transition between states
+  -webkit-transition: visibility opacity 0.2s;
+  */
+}
+
+/*color del fondo hover imagenes portfolio*/
+figure{
+  background: #000;
+}
+
+figure:hover a img{
+  opacity: .5;
+}
+
+figure:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+
+}
+
+figure:hover .imgDescription a{
+  /*color del texto de las imagenes al hacer hover*/
+  color: #fff;
+}
+
+.shop{
+  font-size: .8em;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .masthead {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}
+
+/*back button, para volver al menu principal*/
+.back-button a{
+	color: black;
+	font-size: 120%;
+}
+.back-button a:hover{
+	color: #ff776f;
+	text-decoration: none;
+}
+
+/*linked, para crear links sin el subrayado*/
+.linked a{
+	color: black;
+	font-size: 200%;
+}
+.linked a:hover{
+	color: #ff776f;
+	text-decoration: none;
+}
+
+/* Sombra del slide borrada */
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+/* Controla las flechas del slide. Cuanto más negativo el numero, mas a los extremos */
+
+@media screen and (min-width: 768px){
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+    margin-left: -50px;
+}
+
+@media screen and (min-width: 768px){
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+    margin-right: -50px;
+}
+
+footer{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+footer a{
+  padding: 5px;
+  color: #000;
+}
+
+footer a:hover{
+  color: #ff776f;
+}
